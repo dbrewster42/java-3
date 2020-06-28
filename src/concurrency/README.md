@@ -18,6 +18,10 @@
 
 * Set the name of the thread to be the name of your TA group that you brainstormed.
 * When you print out the List of members of your TA group, each name should have a different color output in the console.
-* For the Sync thread, create 5 threads.  Allow the nums List to be a shared data resource amongst ALL of the threads.  Protect the List from thread interference using a thread blocking technique, such as synchronization or by using an Atomic data structure.  Also, prevent the code from using out-dated cached values of the nums list.
+* For the Sync thread, do the following:
+  *  create 5 Sync threads.  
+  *  Allow the nums List to be a shared data resource amongst ALL of the threads.  
+  *  Protect the List from thread interference using a thread blocking technique, such as synchronization or by using an Atomic data structure.
+  *  Prevent the code from using out-dated cached values of the nums list.
 
 
