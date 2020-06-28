@@ -25,9 +25,17 @@ When you're finished completing the exercises:
 - [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
 - [ ] Push all of your commits: <code>git push origin `<firstName-lastName>`</code>.
 - [ ] When ready for your TA to review, open a Pull Request (PR) and add your TA as a collaborator.
-  
-## ********************************************************
-## TEKsystems Academy Submission Instructions
 
-- [ ] After Submitting a Pull Request to your TA, Submit the exercise in [TEKacademy](https://bit.ly/TEKacademy)  Upload the form using the  <code>Upload your Assignment</code> button in the Corresponding module of [TEKacademy](https://bit.ly/TEKacademy)
-- [ ] Download & Complete the [Exercise Evaluation Form](https://teksystems.tahoe.appsembler.com/assets/courseware/v1/5cde54cebe581062f1328323e651268d/asset-v1:teksystems+TEK_edX_FSBootcamp+2020+type@asset+block/Exercise_Evaluation_form.docx).  Upload the form in [TEKacademy](https://bit.ly/TEKacademy)
+
+## ********************************************************
+<h2>TEKacademy Submission: </h2>
+<h3>When you're finished completing the exercises:</h3>
+
+- [ ] Submit the exercise in the [TEKacademy portal](https://bit.ly/TEKacademy)
+
+- [ ] Complete the <a href="https://bit.ly/2KE32Yw" target="_blank">Exercise Evaluation Form</a> in the portal. 
+  
+- [ ] Download & Complete the [Exercise Evaluation Form](https://teksystems.tahoe.appsembler.com/assets/courseware/v1/5cde54cebe581062f1328323e651268d/asset-v1:teksystems+TEK_edX_FSBootcamp+2020+type@asset+block/Exercise_Evaluation_form.docx). 
+  
+- [ ] Upload the form in [TEKacademy](https://bit.ly/TEKacademy)
+  
