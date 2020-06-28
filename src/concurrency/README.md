@@ -1,4 +1,4 @@
-**<h2>Advanced Java - 1 : Concurrency<h2>**
+<h2>Advanced Java - 1 : Concurrency</h2>
 
 1. Create a Thread called <code>Reasoning</code>.  It should be created by inheriting from the Thread class.  Define a void method on the Reasoning class called, <code>distinguish</code>.  In this method, Print out the following statements to the console:
    * print out what the difference is between a thread and a process.  
