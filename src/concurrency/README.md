@@ -1,4 +1,4 @@
-<h2>Advanced Java - 1 : Concurrency</h2>
+<h1>Advanced Java - 1 : Concurrency</h1>
 
 1. Create a Thread called <code>Reasoning</code>.  It should be created by inheriting from the Thread class.  Define a void method on the Reasoning class called, <code>distinguish</code>.  In this method, Print out the following statements to the console:
    * print out what the difference is between a thread and a process.  
@@ -21,7 +21,7 @@
 
 
 *******************
-<h1>Bonus : </h1>
+<h2>Bonus : </h2>
 
 * Set the name of the thread to be the name of your TA group that you brainstormed.
 * When you print out the List of members of your TA group, each name should have a different color output in the console.
