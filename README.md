@@ -4,15 +4,7 @@ There are 3 days in the Advanced Java module.  To proceed, go to the folder of t
 
 * <h2>Day 1: Concurrency</h2>
 * <h2>Day 2: Lambda Expressions & Streams</h2>
-* <h2>Day 3: Concurrency</h2>
-
-## ********************************************************
-
-When you're finished completing the exercises:
-
-- [ ] Submit the exercise in the <a href="https://bit.ly/3d1Wpvr" target="_blank">TEKcamp Portal</a>
-
-- [ ] Complete the <a href="https://bit.ly/2KE32Yw" target="_blank">Exercise Evaluation Form</a> in the portal. 
+* <h2>Day 3: Regex</h2>
 
 ## ********************************************************
 ## Git Instructions
