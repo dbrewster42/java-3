@@ -19,7 +19,6 @@ class Sync extends Thread {
             int randInt = rand.nextInt(100);
             this.nums.add(randInt);
         }
-        
     }
 
     public static void main(String[] args)  {

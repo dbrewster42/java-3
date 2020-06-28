@@ -1,4 +1,4 @@
-# TEKcamp - Java-III
+# TEKcamp - Advanced Java
 
 There are 3 days in the Advanced Java module.  To proceed, go to the folder of the topic you covered for the day and take a look at the README file for the exercise details.  All the folders (packages) are in the ./src folder.  
 
@@ -17,7 +17,6 @@ There are 3 days in the Advanced Java module.  To proceed, go to the folder of t
 - [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
 - [ ] Push all of your commits: <code>git push origin `<firstName-lastName>`</code>.
 - [ ] When ready for your TA to review, open a Pull Request (PR) and add your TA as a collaborator.
-
 
 ## ********************************************************
 <h2>TEKacademy Submission: </h2>
