@@ -2,7 +2,7 @@
 
 <h2>Exercise #1:</h2>
 
-Open the lambda.Numbers.java file.  This file contains a Numbers class that has the following method signatures:
+Open the Numbers.java file.  This file contains a Numbers class that has the following method signatures:
 
 * isOdd(i)
 * isEven(i)
@@ -10,26 +10,25 @@ Open the lambda.Numbers.java file.  This file contains a Numbers class that has 
 * added()
 * subtracted()
 * multiplied()
-* findMin()
+* divided()
 * findMax()
+* findMin()
 * compare(i,j)
 * append(n)
 
 1. Complete all of the above instance methods, and test your methods by running all of them in the main() method of the lambda.Numbers class.  Display the output to the console. 
 
-2. Convert all of the above instance methods into lambda expressions in the main() method of the lambda.Numbers class.  Give the lambda expressions names that are slightly different than the instance methods.  Verify your code by printing the output of the lambda expressions to the console.
+2. Convert all of the above instance methods into lambda expressions in the main() method of the Numbers class.  Give the lambda expressions names that are slightly different than the instance methods.  Verify your code by printing the output of the lambda expressions to the console.
 
 <h2>Exercise #2:</h2>
 
-Open the lambda.Names.java file. This file contains a Names class that has the following method signatures:
-* addName(name)
-* sortNames(names,sortingCondition)
-* flipName(name,names)
-* capsFirst(name,names)
-* lowerRest(name,names)
-* cleanNames(names)
+Open the Animals.java file. This file contains an Animals class that has the following method signatures:
+* capsFirst(List l, boolean b)
+* addAnimal(String animal)
+* lowerFirst(List l, boolean b)
+* flipAnimals(boolean b)
 
-1. Complete all of the above instance methods, and test your methods by running all of them in the main() method of lambda.Names.  Display the output to the console.
+1. Complete all of the above instance methods, and test your methods by running all of them in the main() method of Names.  Display the output to the console.
 
 2. Refactor the above instance methods to accept lambda expressions as arguments.  Verify your code by printing the output of the lambda expressions to the console.
 
