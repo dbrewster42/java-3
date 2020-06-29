@@ -26,7 +26,7 @@ There are 3 days in the Advanced Java module.  To proceed, go to the folder of t
 
 - [ ] Complete the <a href="https://bit.ly/2KE32Yw" target="_blank">Exercise Evaluation Form</a> in the portal. 
   
-- [ ] Download & Complete the [Exercise Evaluation Form](https://teksystems.tahoe.appsembler.com/assets/courseware/v1/5cde54cebe581062f1328323e651268d/asset-v1:teksystems+TEK_edX_FSBootcamp+2020+type@asset+block/Exercise_Evaluation_form.docx). 
+- [ ] Download & Complete the [Exercise Evaluation Form](https://bit.ly/TEKacademy)
   
 - [ ] Upload the form in [TEKacademy](https://bit.ly/TEKacademy)
   

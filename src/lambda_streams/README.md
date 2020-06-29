@@ -40,14 +40,6 @@ Open the Animals.java file. This file contains an Animals class that has the fol
 * Refactor the Numbers and Names java files into JavaScript.  
 
 ## ********************************
-
-When you're finished completing the exercises:
-
-- [ ] Submit the exercise in the <a href="https://bit.ly/3d1Wpvr" target="_blank">TEKcamp Portal</a>
-
-- [ ] Complete the <a href="https://bit.ly/2KE32Yw" target="_blank">Exercise Evaluation Form</a> in the portal. 
-
-## ********************************
 ## Git Instructions
 - [ ] Create a template copy of this repository by clicking : "Use this template"
 - [ ] Name the repository the same name as the master template repository.
@@ -56,4 +48,15 @@ When you're finished completing the exercises:
 - [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
 - [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
 - [ ] Push commits: git push origin `<firstName-lastName>`.
-## ********************************
+## ********************************************************
+<h2>TEKacademy Submission: </h2>
+<h3>When you're finished completing the exercises:</h3>
+
+- [ ] Submit the exercise in the [TEKacademy portal](https://bit.ly/TEKacademy)
+
+- [ ] Complete the <a href="https://bit.ly/2KE32Yw" target="_blank">Exercise Evaluation Form</a> in the portal. 
+  
+- [ ] Download & Complete the [Exercise Evaluation Form](https://bit.ly/TEKacademy)
+  
+- [ ] Upload the form in [TEKacademy](https://bit.ly/TEKacademy)
+  
