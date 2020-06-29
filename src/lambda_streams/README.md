@@ -53,8 +53,6 @@ Open the Animals.java file. This file contains an Animals class that has the fol
 <h3>When you're finished completing the exercises:</h3>
 
 - [ ] Submit the exercise in the [TEKacademy portal](https://bit.ly/TEKacademy)
-
-- [ ] Complete the <a href="https://bit.ly/2KE32Yw" target="_blank">Exercise Evaluation Form</a> in the portal. 
   
 - [ ] Download & Complete the [Exercise Evaluation Form](https://bit.ly/TEKacademy)
   
