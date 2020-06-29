@@ -27,16 +27,15 @@ Open the Animals.java file. This file contains an Animals class that has the fol
 * addAnimal(String animal)
 * lowerFirst(List l, boolean b)
 * flipAnimals(boolean b)
+* sortAnimals(boolean b)
 
-1. Complete all of the above instance methods, and test your methods by running all of them in the main() method of Names.  Display the output to the console.
+1. Complete all of the above methods, and test your methods by running all of them in the main() method of Names.  Display the output to the console.
 
-2. Refactor the above instance methods to accept lambda expressions as arguments.  Verify your code by printing the output of the lambda expressions to the console.
+2. Refactor the methods to accept lambda expressions as arguments.  Verify your code by printing the output of the methods to the console.
 
-3. Add at least 10 names to the list of names, and run all transform methods on every name in the list.  Print the cleaned up list of names to the console.
+<h2>Bonus: </h2>
 
-<h2>Bonus Functionality:</h2>
-
-* Add your own method that accepts a lambda expression as an argument to manipulate the list of names.
+* Add your own method that accepts a lambda expression as an argument to generate a list of random animals, that gets added to the animals list.
 * Allow the sortNames() method to let users specify a custom sorting algorithm, passed in as a lambda expression.  If no custom sorting algorithm specified, sortNames() should provide a default alphabetical sorting algorithm.
 
 ## ********************************

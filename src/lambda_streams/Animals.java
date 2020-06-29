@@ -53,27 +53,10 @@ class Animals {
         return instructions;
     }
 
-    String capsFirst(String name, List<String> names) {
-    //If the name is not in the names list, add it to the list.
-    //Capitalize the first letter of the first and last name.
-    //If the last name starts with "Mc", capitalize the third letter
-        return "";
-    };
-
-    String lowerRest(String name, List<String> names) {
-    //If the name is not in the names list, add it to the list.
-    //make sure all letters besides the first letter are lowercased.
-        return "";
+    static List<String> sortAnimals(boolean mutate) {
+    //sort the animals in alphabetical order.  If the booleaen parameter is true, mutating the animals list.  if the mutate boolean is false, sort a 'copy' of the animals list, then return that list of sorted animals, WITHOUT mutating the static animals array. return the sorted list in both cases.
+    return animals;
     }
 
-    List<String> cleanNames(List<String> names) {
-        //run all transform methods on the list of names.
-        return names;
-    }
 
-}
-
-//@FunctionalInterface
-interface Stringable {
-    void lower(List names);
 }
