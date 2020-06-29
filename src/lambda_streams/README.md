@@ -37,6 +37,7 @@ Open the Animals.java file. This file contains an Animals class that has the fol
 
 * Add your own method that accepts a lambda expression as an argument to generate a list of random animals, that gets added to the animals list.
 * Allow the sortNames() method to let users specify a custom sorting algorithm, passed in as a lambda expression.  If no custom sorting algorithm specified, sortNames() should provide a default alphabetical sorting algorithm.
+* Refactor the Numbers and Names java files into JavaScript.  
 
 ## ********************************
 
