@@ -10,7 +10,7 @@ All the exercise instructions can be foudn in the Regex.java class file
 
 4. a Create an array of all the words besides the word 'sleepy'.  Each word does not have to be a separate element, although you can split it that way if you wish.  We just want an array that everything that is not 'sleepy'.  
 
-5. b combine the array that you just created into a string
+4. b combine the array that you just created into a string
 String not_sleepy; //punctuation marks will be here
 
 4. c remove the punctuation marks from the notSleepy string.
