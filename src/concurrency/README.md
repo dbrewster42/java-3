@@ -28,3 +28,23 @@
   *  Allow the nums List to be a shared data resource amongst ALL of the threads.  
   *  Protect the List from thread interference using a thread blocking technique, such as synchronization or by using an Atomic data structure.
   *  Prevent the code from using out-dated cached values of the nums list.
+
+
+## ********************************
+## Git Instructions
+- [ ] Create a template copy of this repository by clicking : "Use this template"
+- [ ] Name the repository the same name as the master template repository.
+- [ ] Add your TA as collaborator
+- [ ] Clone YOUR repo to your local computer
+- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
+- [ ] Push commits: git push origin `<firstName-lastName>`.
+## ********************************************************
+<h2>TEKacademy Submission: </h2>
+<h3>When you're finished completing the exercises:</h3>
+
+- [ ] Submit the exercise in the [TEKacademy portal](https://bit.ly/TEKacademy)
+  
+- [ ] Download & Complete the [Exercise Evaluation Form](https://bit.ly/TEKacademy)
+  
+- [ ] Upload the form in [TEKacademy](https://bit.ly/TEKacademy)

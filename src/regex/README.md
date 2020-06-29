@@ -22,3 +22,23 @@ String notSleepy; no punctuation marks should be here.
 <h2>BONUS : </h2>
 
 5. You are looking for unicode arrow symbols in a string.  https://jrgraphix.net/r/Unicode/2190-21FF is a selection of unicode arrow symbols to aid you in your search.  Match all the codes that are arrows, and then print them out to the console.  They should be printing out as the arrow images.
+
+
+## ********************************
+## Git Instructions
+- [ ] Create a template copy of this repository by clicking : "Use this template"
+- [ ] Name the repository the same name as the master template repository.
+- [ ] Add your TA as collaborator
+- [ ] Clone YOUR repo to your local computer
+- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
+- [ ] Push commits: git push origin `<firstName-lastName>`.
+## ********************************************************
+<h2>TEKacademy Submission: </h2>
+<h3>When you're finished completing the exercises:</h3>
+
+- [ ] Submit the exercise in the [TEKacademy portal](https://bit.ly/TEKacademy)
+  
+- [ ] Download & Complete the [Exercise Evaluation Form](https://bit.ly/TEKacademy)
+  
+- [ ] Upload the form in [TEKacademy](https://bit.ly/TEKacademy)
