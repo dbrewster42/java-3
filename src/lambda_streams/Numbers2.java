@@ -1,5 +1,6 @@
 import java.util.Arrays;
 import java.util.List;
+import java.util.Collections;
 
 class Numbers2 {
     static List<Integer> nums = Arrays.asList(10, 100, 1000, 5, 50, 500, 3, 30, 300, 7, 70, 700, 1, 10, 100, 25, 250,
@@ -56,40 +57,39 @@ class Numbers2 {
         System.out.println("Is " + j + " a prime? " + pri.prime(j));
         System.out.println("Is " + k + " a prime? " + pri.prime(k));
 
-        lambdaAdd lambda = (list) -> {
-            int sum = 0;
-            for (Integer i : list) {
-                sum += i.intValue();
-            }
+        lambdaAdd lambda = (nums) -> {
+            // Integer sum = nums.stream().reduce(0, Integer::sum);
+            Integer sum = nums.stream().reduce(0, (a, b) -> a + b);
             return sum;
         };
         System.out.println("added : " + lambda.added(nums));
 
-        lambdaSubtract sub = list -> {
-            int sum = 0;
-            for (Integer i : list) {
-                sum -= i.intValue();
-            }
-            return sum;
+        lambdaSubtract sub = (nums) -> {
+            Integer result = nums.stream().reduce(0, (a, b) -> a - b);
+            return result;
         };
         System.out.println("subtract : " + sub.subtract(nums));
 
+        lambdaMultipled mult = (nums) -> {
+            double multipled = nums.stream().reduce(1, (a, b) -> a * b);
+            return multipled;
+        };
+        System.out.println("multiplied : " + mult.multiply(nums));
+
         lambdaFindMax find = arr -> {
-            int max = arr.get(0).intValue();
-            for (Integer i : arr) {
-                if (i.intValue() > max)
-                    max = i;
-            }
+            Integer max = (int) Collections.max(nums);
             return max;
         };
         System.out.println("Max : " + find.max(nums));
 
+        lambdaDivide div = nums -> {
+            double division = nums.stream().reduce(find.max(nums), (a, b) -> a / b);
+            return division;
+        };
+        System.out.println("Max value divided by rest of list : " + div.divide(nums));
+
         lambdaFindMin find2 = arr -> {
-            int min = arr.get(0).intValue();
-            for (Integer i : arr) {
-                if (i.intValue() < min)
-                    min = i;
-            }
+            Integer min = (int) Collections.min(nums);
             return min;
         };
         System.out.println("Min : " + find2.min(nums));
@@ -128,7 +128,7 @@ class Numbers2 {
     //     return product;
     // }
     interface lambdaDivide {
-        double divide(List<Integer> list)
+        double divide(List<Integer> list);
     }
 
     // static int divided(List<Integer> arr) {

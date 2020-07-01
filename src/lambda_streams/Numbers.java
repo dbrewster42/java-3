@@ -12,6 +12,7 @@ class Numbers {
     public static void main(String[] args) {
         //Part I :complete the static class methods that have been set up in this Numbers class java file.  Use streams to 
         // compute the results wheever possible.
+        //*************************     Part II - Numbers2.java    ****************************************** 
         System.out.println(nums);
         System.out.println(added(nums));
         System.out.println(isOdd(29));
@@ -20,12 +21,12 @@ class Numbers {
         System.out.println(isPrime(39));
         System.out.println(subtracted(nums));
         System.out.println(multipled(nums));
+        System.out.println(divided(nums));
         System.out.println(findMax(nums));
         System.out.println(findMin(nums));
         System.out.println(Math.pow(10, 5));
         System.out.println(compare(0, 1, nums));
         // System.out.println(append(42, nums));
-        //Part II - Numbers2.java        
 
     }
 
@@ -115,8 +116,10 @@ class Numbers {
         //if the value at i is greater, return 1.  if the value at j is greater, return -1.  if the two values are equal, return 0.
         if (arr.get(i).intValue() > arr.get(j).intValue())
             return 1;
-        else
+        else if (arr.get(i).intValue() < arr.get(j).intValue())
             return -1;
+        else
+            return 0;
     }
 
     static int append(int n, List<Integer> arr) {
