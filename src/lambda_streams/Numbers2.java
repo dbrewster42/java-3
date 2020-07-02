@@ -11,25 +11,8 @@ class Numbers2 {
         System.out.println(nums);
         //Part II - refactor all of the class methods to accept lambda expressions. You can put the lambda functions directly inside
         // the method calls, or defined them first, then pass them into the methods. give them the same names as the static methods,
-        // but add the word 'lambda' in front of every lambda function:
-        /* e.g.
-        
-        added(() -> {});
-        
-        OR
-        
-        lambdaAdd = () -> {};
-        added(lambdaAdd);
-        
-        isOdd(() -> {});
-        
-        OR
-        
-        lambdaOdd = () -> {};
-        isOdd(lambdaOdd);
-        etc...
-        
-        */
+        // but add the word 'lambda' in front of every lambda function:       
+
         lambdaIsOdd odd = (i) -> {
             if (i % 2 == 0)
                 return false;

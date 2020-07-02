@@ -76,31 +76,6 @@ class Animals {
                     .collect(Collectors.toList());
         }
         return animals;
-
-        // if (mutate) {
-        //     animaList.stream().map(s -> {
-        //         String cF = "";
-        //         cF += s.substring(0, 1).toUpperCase() + s.substring(1).toLowerCase();
-        //         return cF;
-        //     }).collect(Collectors.toList());
-        //     for (String j : animaList) {
-        //         System.out.println(j);
-        //     }
-        //     return animaList;
-        // } else {
-        //     List<String> animalCopy = new ArrayList<String>();
-        //     for (String i : animaList) {
-        //         animalCopy.add(i);
-        //     }
-        //     animalCopy.stream().map(s -> {
-        //         String cF;
-        //         cF = s.substring(0, 1).toUpperCase() + s.substring(1).toLowerCase();
-        //         return cF;
-        //     }).collect(Collectors.toList());
-        //     return animalCopy;
-        // }
-
-        // return animals;
     }
 
     static String addAnimal(String animal) {
@@ -127,25 +102,6 @@ class Animals {
                     .collect(Collectors.toList());
         }
         return animals;
-
-        // if (mutate) {
-        //     animaList.stream().map(a -> {
-        //         String newAnimal;
-        //         newAnimal = a.substring(0, 1).toLowerCase() + a.substring(1).toUpperCase();
-        //         return newAnimal;
-        //     }).collect(Collectors.toList());
-        //     return animaList;
-        // } else {
-        //     List<String> animalCopy = new ArrayList<String>();
-        //     animaList.stream().map(a -> {
-        //         String newAnimal;
-        //         newAnimal = a.substring(0, 1).toLowerCase() + a.substring(1).toUpperCase();
-        //         animalCopy.add(newAnimal);
-        //         return animalCopy;
-        //     }).collect(Collectors.toList());
-        //     return animaList;
-        // }
-
     }
 
     static List<String> flipAnimals(boolean mutate) {

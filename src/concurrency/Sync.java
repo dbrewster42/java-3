@@ -3,9 +3,10 @@
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Random;
+// import java.util.concurrent.*;
 
 class Sync extends Thread {
-    List nums = new ArrayList<>();
+    List<Integer> nums = new ArrayList<Integer>();
 
     Sync(String name) {
         super(name);
@@ -17,13 +18,16 @@ class Sync extends Thread {
 
         for (int i = 0; i < 100; i++) {
             int randInt = rand.nextInt(100);
+            Integer randInteger = Integer.valueOf(randInt);
             this.nums.add(randInt);
         }
     }
 
     public static void main(String[] args) {
         Sync syncThread = new Sync("sync thread");
+        Sync syncThread2 = new Sync("sync thread 2");
         syncThread.start();
+        syncThread2.start();
 
         try {
             syncThread.sleep(2000);

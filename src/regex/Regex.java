@@ -69,5 +69,15 @@ class Regex {
 
         String[] arrows = { "\u21FD", "\u26F7", "\u21FF", "\u21EF", "\u21EC", "\u26F9", "\u26FD", "\u26D4", "\u26A5",
                 "\u21FD", "\u2190", "\u26A1", "\u21BA", "\u2196", "\u2603", "\u21FD" };
+
+        String unicode = "\\21";
+        Pattern pattern3 = Pattern.compile("\\..21");
+
+        for (String uni : arrows) {
+            System.out.println(uni);
+            Matcher matcher3 = pattern3.matcher(uni);
+            if (matcher3.find())
+                System.out.println(uni);
+        }
     }
 }
