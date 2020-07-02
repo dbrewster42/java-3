@@ -6,17 +6,22 @@ class Regex {
 
         // 1. What does the following pattern match? (\d){36} explain in a println() statement.
 
-        System.out.println("The following pattern ('\\d'){36} matches : ...");
+        System.out.println("The following pattern ('\\d'){36} matches :any number(digit) 36 times");
 
         String[] TEKmentors = { "Amir Yunas", "Mark Bennet", "Rosa Garcia", "Desaree Byers", "Abram Jablonski",
                 "Dylan Fellows", "Emilios Papas", "Jonathan Diamond" };
 
         // 2. Create a new array of the first names of the TEKmentors.  Use Regex to only grab the first name of every TEKmentor.
         //  Push the values to a new array
-        // String tekMentors = new String[8];
-        // String first = "\w";
-        // Pattern pattern = Pattern.compile("\w");
-        // Matcher matcher = pattern.matcher(TEKmentors.toString());
+        String[] tekMentors = new String[8];
+        for (String a : TEKmentors) {
+            Pattern pattern = Pattern.compile("\\w+");
+            Matcher matcher = pattern.matcher(a);
+            if (matcher.find()) {
+                a = matcher.group();
+                System.out.println(a);
+            }
+        }
 
         // 3. Find all the occurences of any form of 'book' in the following paragraph. use regex to match the occurences
         // and store the count of books in an int.
@@ -29,12 +34,11 @@ class Regex {
                 + "your books, and remember the slogan from 'reading rainbow' : 'Take a look! It's in a book! Reading Rainbow!";
 
         int count = 0;
-        // System.out.println(bookText);
         String book = "book";
         Pattern pattern2 = Pattern.compile(book);
         Matcher matcher2 = pattern2.matcher(bookText);
         boolean matchFound = matcher2.find();
-        if (matchFound == matcher2.find()) {
+        while (matchFound == matcher2.find()) {
             count++;
         }
         System.out.println(count);
@@ -43,16 +47,20 @@ class Regex {
         // although you can split it that way if you wish.  We just want an array that everything that is not 'sleepy'.  
 
         String sleepy = "I felt sleepy because I saw the others were sleepy and because I knew I should feel sleepy, but I wasn't really sleepy.  If you're sleepy and you know it, clap your hands.  Keep on being sleepy until you actually become sleepy";
-
+        String[] sleepArr = sleepy.split("sleepy");
+        // System.out.println(sleepArr);
         // 4.b combine the array that you just created into a string
-        String not_sleepy; //punctuation marks will be here
-
+        // String not_sleepy; //punctuation marks will be here
+        String not_sleepy = String.join(" ", sleepArr);
         //4.c remove the punctuation marks from the notSleepy string.
-        String notSleepy; //no punctuation marks should be here.
-
+        // String notSleepy; //no punctuation marks should be here.
+        String[] split = not_sleepy.split("\\W");
+        String notSleepy = String.join(" ", split);
+        System.out.println(notSleepy);
         //4.d Now replace all the occurences of 'sleepy' with the word 'happy'.  Call the new string happy.  
-
-        String happy;
+        String happy = String.join("happy", sleepArr);
+        System.out.println(happy);
+        // String happy;
 
         //BONUS : 
         //5. You are looking for unicode arrow symbols in a string.  https://jrgraphix.net/r/Unicode/2190-21FF is a selection of
