@@ -79,9 +79,6 @@ class Numbers {
         double product = 1;
         for (Integer i : arr) {
             product *= i.intValue();
-            // if (i.intValue() == 7) {
-            //     product = product / 1000;
-            // }
         }
         return product;
     }

@@ -1,5 +1,3 @@
-// package lambda_streams;
-
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -10,6 +8,16 @@ class Animals {
 
     public static void main(String[] args) {
         System.out.println("original animals : " + animals);
+
+        lambdaUpperFirst doIt = animaList -> {
+            animals = animaList.stream().map(s -> s.substring(0, 1).toUpperCase() + s.substring(1).toLowerCase())
+                    .collect(Collectors.toList());
+            return animals;
+        };
+        List<String> lambdaAnimal = capsFirst2(animals, doIt);
+
+        // System.out.println(lambdaAnimal);
+
         animals = lowerFirst(animals, true);
         System.out.println(animals);
         //clean up the animals array by using the capsFirst() method. follow instructions in the method definition. 
@@ -37,19 +45,33 @@ class Animals {
         animals = sortAnimals(true);
         System.out.println(animals);
 
+        lambdaLower backwards = animaList -> {
+            animals = animaList.stream().map(s -> s.substring(0, 1).toLowerCase() + s.substring(1).toUpperCase())
+                    .collect(Collectors.toList());
+            return animals;
+        };
+        lambdaAnimal = lowerFirst2(animals, backwards);
+    }
+
+    static List<String> capsFirst2(List<String> animaList, lambdaUpperFirst doIt) {
+        System.out.println("Uppercased lambda: " + doIt.upper(animaList));
+        return animaList;
+    }
+
+    static List<String> lowerFirst2(List<String> animaList, lambdaLower backwards) {
+        System.out.println("Lowercase lambda: " + backwards.lower(animaList));
+        return animaList;
     }
 
     static List<String> capsFirst(List<String> animaList, boolean mutate) {
-        //clean up the animals list so that the first letter is capitalized, and all the other letters are lowercased. Use a stream to accomplish
-        // this task.  Also, the 2nd parameter of this function is a boolean.  use this boolean 'flag' to determine whether or not to 'mutate' the
-        // original animals array stored as a static class field.  if the flag is set to 'true', mutate the animals and return the animals out of
-        // the function.  if it is false, create a copy of the animals, perform your stream operations on the copy, and return the copy of animals
-        // out of the function, WITHOUT modifying the original animals array.  
         if (mutate) {
             animals = animaList.stream().map(s -> s.substring(0, 1).toUpperCase() + s.substring(1).toLowerCase())
                     .collect(Collectors.toList());
         } else {
-            List<String> newList = animaList;
+            List<String> newList = new ArrayList<String>();
+            for (String j : animaList) {
+                newList.add(j);
+            }
             animals = newList.stream().map(s -> s.substring(0, 1).toUpperCase() + s.substring(1).toLowerCase())
                     .collect(Collectors.toList());
         }
@@ -97,7 +119,10 @@ class Animals {
             animals = animaList.stream().map(s -> s.substring(0, 1).toLowerCase() + s.substring(1).toUpperCase())
                     .collect(Collectors.toList());
         } else {
-            List<String> newList = animaList;
+            List<String> newList = new ArrayList<String>();
+            for (String j : animaList) {
+                newList.add(j);
+            }
             animals = newList.stream().map(s -> s.substring(0, 1).toLowerCase() + s.substring(1).toUpperCase())
                     .collect(Collectors.toList());
         }
@@ -167,6 +192,14 @@ class Animals {
 
     static void otherMethod() {
         animals.stream().map(String::toLowerCase).collect(Collectors.toList());
+    }
+
+    interface lambdaUpperFirst {
+        List<String> upper(List<String> list);
+    }
+
+    interface lambdaLower {
+        List<String> lower(List<String> list);
     }
 
 }

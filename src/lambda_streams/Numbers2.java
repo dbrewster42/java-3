@@ -5,6 +5,7 @@ import java.util.Collections;
 class Numbers2 {
     static List<Integer> nums = Arrays.asList(10, 100, 1000, 5, 50, 500, 3, 30, 300, 7, 70, 700, 1, 10, 100, 25, 250,
             2500);
+    static List<Integer> nums2 = Arrays.asList(2, 5, 5, 1, 3, 7, 6, 1, 2, 3);
 
     public static void main(String[] args) {
         System.out.println(nums);
@@ -70,11 +71,11 @@ class Numbers2 {
         };
         System.out.println("subtract : " + sub.subtract(nums));
 
-        lambdaMultipled mult = (nums) -> {
-            double multipled = nums.stream().reduce(1, (a, b) -> a * b);
+        lambdaMultipled mult = (nums2) -> {
+            Integer multipled = nums2.stream().reduce(1, (a, b) -> a * b);
             return multipled;
         };
-        System.out.println("multiplied : " + mult.multiply(nums));
+        System.out.println("multiplied : " + mult.multiply(nums2));
 
         lambdaFindMax find = arr -> {
             Integer max = (int) Collections.max(nums);
@@ -82,11 +83,13 @@ class Numbers2 {
         };
         System.out.println("Max : " + find.max(nums));
 
-        lambdaDivide div = nums -> {
-            double division = nums.stream().reduce(find.max(nums), (a, b) -> a / b);
+        lambdaDivide div = nums2 -> {
+            double division = nums2.stream().reduce(756000, (a, b) -> a / b);
             return division;
         };
-        System.out.println("Max value divided by rest of list : " + div.divide(nums));
+        System.out.println("756000 divided by rest of list : " + div.divide(nums2));
+        System.out.println(
+                "I can't figure out how to get multiply or divide to work with the stream so I made a new list. I solved it the right way in the other file(with no stream)");
 
         lambdaFindMin find2 = arr -> {
             Integer min = (int) Collections.min(nums);
@@ -116,7 +119,7 @@ class Numbers2 {
     }
 
     interface lambdaMultipled {
-        double multiply(List<Integer> list);
+        int multiply(List<Integer> list);
     }
 
     // static int multipled(List<Integer> arr) {
