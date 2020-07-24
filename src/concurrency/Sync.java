@@ -1,9 +1,6 @@
-// package concurrency;
-
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Random;
-// import java.util.concurrent.*;
 
 class Sync extends Thread {
     List<Integer> nums = new ArrayList<Integer>();
